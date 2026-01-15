@@ -1,7 +1,8 @@
 {
   "name": "amor-e-patas",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Pet Shop em Uberlândia - Banho e Tosa e Estética Animal",
   "type": "module",
   "scripts": {
     "dev": "vite",
