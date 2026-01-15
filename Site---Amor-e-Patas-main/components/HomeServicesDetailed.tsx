@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bath, Scissors, Dog, Sparkles, Calendar, Heart, ShieldAlert, ShoppingBag, Check } from 'lucide-react';
+import { Bath, Scissors, Dog, Sparkles, Calendar, Heart, ShieldAlert, ShoppingBag, Check, Ruler } from 'lucide-react';
 
 const HomeServicesDetailed: React.FC = () => {
   return (
@@ -90,6 +90,16 @@ const HomeServicesDetailed: React.FC = () => {
                     <span className="bg-white text-primary text-xs font-bold px-3 py-1 rounded-full border border-pink-200">PACOTE MENSAL</span>
                     <span className="bg-white text-primary text-xs font-bold px-3 py-1 rounded-full border border-pink-200">PACOTE ANUAL</span>
                   </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-3xl border border-blue-100 flex gap-5 items-center">
+                <div className="w-16 h-16 bg-blue-500 text-white rounded-2xl flex items-center justify-center shrink-0">
+                  <Ruler size={32} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 text-xl">Atendimento a Porte Grande</h4>
+                  <p className="text-gray-600 text-sm">Estrutura preparada e equipe especializada para receber cães de grande porte (Golden, Bernese, etc) com segurança.</p>
                 </div>
               </div>
             </div>
