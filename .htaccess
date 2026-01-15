@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redireciona tudo para a pasta dist (onde está o site construído)
+    RewriteRule ^$ dist/index.html [L]
+    
+    # Se o arquivo solicitado existir na pasta dist, serve ele
+    RewriteCond %{DOCUMENT_ROOT}/dist/$1 -f
+    RewriteRule ^(.*)$ dist/$1 [L]
+
+    # Caso contrário (para rotas do React), serve o index.html da dist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . dist/index.html [L]
+</IfModule>
