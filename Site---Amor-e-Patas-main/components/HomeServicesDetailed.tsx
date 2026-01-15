@@ -11,7 +11,7 @@ const HomeServicesDetailed: React.FC = () => {
         <div className="mb-24">
           <div className="text-center mb-12">
             <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-2">Padrão de Qualidade</h2>
-            <h3 className="text-3xl md:text-5xl font-extrabold text-gray-900">O que seu pet recebe <br /> em <span className="text-primary">todo Banho</span></h3>
+            <h3 className="text-3xl md:text-5xl font-extrabold text-gray-900">O que seu pet recebe <br /> em <span className="text-primary">todo Banho e Tosa no nosso Pet Shop</span></h3>
           </div>
 
           <div className="bg-accent/50 rounded-[3rem] p-8 md:p-12 border border-pink-100 relative overflow-hidden">
@@ -76,7 +76,7 @@ const HomeServicesDetailed: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 text-xl">Táxi Dog</h4>
-                  <p className="text-gray-600 text-sm">Buscamos e levamos seu pet com segurança no conforto da sua casa em Uberlândia.</p>
+                  <p className="text-gray-600 text-sm">Táxi Dog em Uberlândia e Alto Umuarama: Buscamos e levamos seu pet com segurança e conforto.</p>
                 </div>
               </div>
 

@@ -71,7 +71,7 @@ const About: React.FC = () => {
             />
             <div className="absolute -bottom-20 -left-12 w-48 h-auto p-1.5 bg-white rounded-2xl rotate-[6deg] shadow-2xl z-10">
               <img
-                src="/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter.webp"
+                src="/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_Counter.webp"
                 alt="Ambiente Acolhedor"
                 className="w-full h-full object-contain rounded-xl"
               />

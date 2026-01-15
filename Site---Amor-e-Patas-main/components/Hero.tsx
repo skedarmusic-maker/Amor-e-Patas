@@ -116,13 +116,12 @@ const Hero: React.FC = () => {
             <span className="inline-block px-4 py-1.5 bg-white rounded-full text-gray-500 font-medium text-sm mb-6 shadow-sm border border-pink-50">
               Melhor Empresa de Cuidados Pet
             </span>
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-6">
-              A Felicidade do <br />
-              <span className="text-primary italic">Seu Pet</span>, Nossa Prioridade.
+            <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-[1.1] mb-6">
+              Pet Shop em <span className="text-primary italic">Uberlândia</span> no Alto Umuarama<br />
+              <span className="text-2xl lg:text-3xl font-bold text-gray-700 block mt-2">Cuidado, carinho e bem-estar para o seu pet</span>
             </h1>
             <p className="text-lg text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0">
-              Cuidamos dos seus animais de estimação, amando-os como família.
-              Somos o lugar onde pets felizes e donos tranquilos se encontram.
+              Somos um pet shop localizado na Av. Floriano Peixoto, no Alto Umuarama, em Uberlândia, oferecendo serviços completos com amor, segurança e profissionais apaixonados por animais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
@@ -178,11 +177,16 @@ const Hero: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-1 lg:order-1">
             <h2 className="text-3xl lg:text-5xl font-extrabold mb-6 leading-tight" style={{ color: '#0F172A' }}>
-              Excelência em Estética Animal
+              Excelência em Estética Animal e Banho e Tosa em Uberlândia
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Paulo Cesar é um profissional de estética animal (Groomer) com 10 anos de experiência, especializado em banho e tosa para pets, com destaque em raças como <span className="font-bold text-primary">Spitz Alemão</span>. No Amor & Patas, cada detalhe é cuidado com as mãos de quem realmente entende de estética animal.
-            </p>
+            <div className="text-lg text-gray-700 leading-relaxed mb-8 space-y-4">
+              <p>
+                Paulo Cesar é groomer profissional com mais de 10 anos de experiência em estética animal e banho e tosa em Uberlândia. Especialista em raças como <span className="font-bold text-primary">Spitz Alemão</span>, oferece cuidados personalizados, técnicas seguras e atenção aos detalhes que fazem a diferença no bem-estar do seu pet.
+              </p>
+              <p>
+                No Amor & Patas Pet Shop, cada atendimento é feito com carinho, responsabilidade e conhecimento técnico, garantindo conforto, beleza e saúde para seu animal.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 lg:justify-start">
               <a
                 href="https://www.instagram.com/paulocesargroomer/"

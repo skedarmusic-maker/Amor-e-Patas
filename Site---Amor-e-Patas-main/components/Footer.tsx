@@ -17,30 +17,30 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-extrabold tracking-tight">Amor & Patas</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-8">
-              Amor e Patas Pet Shop e Estética Animal. Dedicação, excelência e muito carinho para o seu melhor amigo em Uberlândia.
+              Amor & Patas: Seu Pet Shop e Banho e Tosa em Uberlândia. Especialistas em estética animal e bem-estar no bairro Alto Umuarama.
             </p>
             <div className="flex gap-4">
-              <a 
-                href="https://www.instagram.com/amorepataspetshop/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/amorepataspetshop/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/5 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
                 title="Siga-nos no Instagram"
               >
                 <Instagram size={20} />
               </a>
-              <a 
-                href="https://youtube.com/@amorpatas" 
-                target="_blank" 
+              <a
+                href="https://youtube.com/@amorpatas"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/5 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
                 title="Inscreva-se no YouTube"
               >
                 <Youtube size={20} />
               </a>
-              <a 
-                href="https://www.tiktok.com/@petshopamorepatas" 
-                target="_blank" 
+              <a
+                href="https://www.tiktok.com/@petshopamorepatas"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/5 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
                 title="Siga-nos no TikTok"
@@ -65,13 +65,13 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xl font-bold mb-8">Nossa Localização</h4>
             <div className="w-full h-48 rounded-2xl overflow-hidden border border-white/10 shadow-lg grayscale-[30%] hover:grayscale-0 transition-all duration-500">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.1098325906764!2d-48.25499793041308!3d-18.882208067355457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445e53c36adf3%3A0x3f0d71f15404550!2sAmor%20%26%20Patas%20Pet%20Shop%20e%20Est%C3%A9tica%20Animal!5e0!3m2!1spt-BR!2sbr!4v1767973239324!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={false} 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.1098325906764!2d-48.25499793041308!3d-18.882208067355457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445e53c36adf3%3A0x3f0d71f15404550!2sAmor%20%26%20Patas%20Pet%20Shop%20e%20Est%C3%A9tica%20Animal!5e0!3m2!1spt-BR!2sbr!4v1767973239324!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-6">
               <li className="flex gap-4">
                 <MapPin className="text-primary flex-shrink-0" size={20} />
-                <span className="text-gray-400 text-sm">Av. Floriano Peixoto, 5237 - 14 - Alto Umuarama, Uberlândia - MG</span>
+                <span className="text-gray-400 text-sm">Av. Floriano Peixoto, 5237 (Loja 14) - Alto Umuarama, Uberlândia - MG, CEP 38405-373</span>
               </li>
               <li className="flex gap-4">
                 <Phone className="text-primary flex-shrink-0" size={20} />
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 pt-10 text-center text-gray-500 text-sm">
           <p>© 2026 Amor & Patas. Todos os direitos reservados.</p>
         </div>

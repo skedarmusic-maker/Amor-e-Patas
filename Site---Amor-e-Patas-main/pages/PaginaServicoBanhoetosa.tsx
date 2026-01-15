@@ -3,10 +3,10 @@ import { Bath, Scissors, Sparkles, MessageCircle, CheckCircle2, Star, Clock, Shi
 
 const PaginaServicoBanhoetosa: React.FC = () => {
   const photos = [
-    "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_4.webp",
-    "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_7.webp",
-    "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_12.webp",
-    "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_13.webp"
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto-de-mim-banho-e-tosa-Uberlandia_Counter_4.webp",
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_7.webp",
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_12.webp",
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_13.webp"
   ];
 
   return (
@@ -40,7 +40,7 @@ const PaginaServicoBanhoetosa: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_6.webp"
+                src="/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_6.webp"
                 alt="Serviço de banho e tosa pet em Uberlândia"
                 className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-auto"
               />
@@ -222,10 +222,10 @@ const PaginaServicoBanhoetosa: React.FC = () => {
           <div className="flex gap-8 w-max animate-marquee">
             {/* Original Items */}
             {[
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_1.png",
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_2.png",
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_3.png",
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_4.webp"
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_1.png",
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_2.png",
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_3.png",
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto-de-mim-banho-e-tosa-Uberlandia_Counter_4.webp"
             ].map((src, i) => (
               <div key={i} className="w-80 h-96 flex-shrink-0 relative group">
                 <img
@@ -244,10 +244,10 @@ const PaginaServicoBanhoetosa: React.FC = () => {
 
             {/* Duplicate Items for Infinite Loop */}
             {[
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_1.png",
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_2.png",
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_3.png",
-              "/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_4.webp"
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_1.png",
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_2.png",
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_3.png",
+              "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto-de-mim-banho-e-tosa-Uberlandia_Counter_4.webp"
             ].map((src, i) => (
               <div key={`dup-${i}`} className="w-80 h-96 flex-shrink-0 relative group">
                 <img

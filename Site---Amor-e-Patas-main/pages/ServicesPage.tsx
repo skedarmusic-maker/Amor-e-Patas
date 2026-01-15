@@ -1,11 +1,11 @@
 import React from 'react';
 import { Bath, Scissors, Dog, Sparkles, Calendar, ShieldAlert, CheckCircle2, MessageCircle, MapPin, Truck, Heart, Star } from 'lucide-react';
-import Products from '../components/Products';
+
 
 const ServicesPage: React.FC = () => {
   return (
     <div className="pt-20 bg-white min-h-screen">
-      
+
       {/* 1. Hero Section - SEO Local Focused */}
       <section className="bg-accent/50 py-20 lg:py-32 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -49,7 +49,7 @@ const ServicesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Padronização de Excelência</h2>
-            <h3 className="text-3xl md:text-5xl font-extrabold text-gray-900">O que está incluso <br/> em <span className="text-primary">todo Banho</span></h3>
+            <h3 className="text-3xl md:text-5xl font-extrabold text-gray-900">O que está incluso <br /> em <span className="text-primary">todo Banho</span></h3>
             <p className="text-gray-500 mt-4">Transparência total: você sabe exatamente o que seu pet recebe.</p>
           </div>
 
@@ -99,8 +99,8 @@ const ServicesPage: React.FC = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800" 
+              <img
+                src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800"
                 className="rounded-[3rem] shadow-2xl border-8 border-white"
                 alt="Tosa em Uberlândia"
               />
@@ -187,9 +187,9 @@ const ServicesPage: React.FC = () => {
                   <span>Atendimento: Alto Umuarama e proximidades.</span>
                 </div>
               </div>
-              <a 
-                href="https://wa.me/5534997622017" 
-                target="_blank" 
+              <a
+                href="https://wa.me/5534997622017"
+                target="_blank"
                 className="mt-10 block w-full bg-primary text-white text-center py-5 rounded-3xl font-bold text-xl hover:bg-primary/90 transition-all shadow-2xl"
               >
                 Agendar via WhatsApp
@@ -199,8 +199,7 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. Produtos Recomendados */}
-      <Products />
+
 
       {/* 8. Rodapé SEO Local */}
       <section className="py-20 bg-white border-t border-gray-100">

@@ -1,46 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amor & Patas - Pet Shop Premium</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#f56caa',
-              secondary: '#ffffff',
-              third: '#89c8d5',
-              accent: '#fef3f7'
-            },
-            fontFamily: {
-              sans: ['Plus Jakarta Sans', 'sans-serif'],
-            }
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NZN7D599');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Shop em Uberlândia – Banho e Tosa | Amor & Patas</title>
+  <meta name="description"
+    content="O melhor Pet Shop em Uberlândia no Alto Umuarama. Especialistas em Banho e Tosa, Spitz Alemão e estética animal. Agende horário na Av. Floriano Peixoto!" />
+
+  <!-- Schema Markup - SEO Local Avançado -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PetStore",
+      "name": "Amor & Patas Pet Shop e Estética Animal",
+      "image": [
+        "https://amorepatas.com.br/images/LOGO-Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_Counter_7.png"
+      ],
+      "@id": "https://amorepatas.com.br",
+      "url": "https://amorepatas.com.br",
+      "telephone": "+5534997622017",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Floriano Peixoto, 5237 - Loja 14",
+        "addressLocality": "Uberlândia",
+        "addressRegion": "MG",
+        "postalCode": "38405-373",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -18.88220238018926,
+        "longitude": -48.25038419062792
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:30",
+          "closes": "18:20"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "07:30",
+          "closes": "12:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/amorepataspetshop/",
+        "https://www.tiktok.com/@petshopamorepatas",
+        "https://youtube.com/@amorpatas"
+      ],
+      "department": {
+        "@type": "LocalBusiness",
+        "name": "Banho e Tosa Amor & Patas",
+        "image": "https://amorepatas.com.br/images/LOGO-Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_Counter_7.png",
+        "telephone": "+5534997622017"
+      }
+    }
+    </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f56caa',
+            secondary: '#ffffff',
+            third: '#89c8d5',
+            accent: '#fef3f7'
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
           }
         }
       }
-    </script>
-    <style>
-      body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        background-color: #ffffff;
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #ffffff;
+    }
+
+    @keyframes pawFade {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5) rotate(var(--paw-rotate));
       }
-      @keyframes pawFade {
-        0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5) rotate(var(--paw-rotate)); }
-        20% { opacity: 0.3; transform: translate(-50%, -50%) scale(1) rotate(var(--paw-rotate)); }
-        80% { opacity: 0.3; transform: translate(-50%, -50%) scale(1) rotate(var(--paw-rotate)); }
-        100% { opacity: 0; transform: translate(-50%, -50%) scale(1.2) rotate(var(--paw-rotate)); }
+
+      20% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1) rotate(var(--paw-rotate));
       }
-      .paw-animation {
-        animation: pawFade 2s forwards ease-in-out;
+
+      80% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1) rotate(var(--paw-rotate));
       }
-    </style>
-    </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-  </body>
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.2) rotate(var(--paw-rotate));
+      }
+    }
+
+    .paw-animation {
+      animation: pawFade 2s forwards ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZN7D599" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+</body>
+
 </html>
