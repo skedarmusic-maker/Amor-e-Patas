@@ -1,4 +1,5 @@
 
+// Deployment trigger: 2026-01-16T18:39:00
 import React, { useState, useEffect, useRef } from 'react';
 import { PawPrint, Star, Crown, ChevronLeft, ChevronRight, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
