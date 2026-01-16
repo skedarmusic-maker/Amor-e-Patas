@@ -124,12 +124,14 @@ const Hero: React.FC = () => {
               Somos um pet shop localizado na Av. Floriano Peixoto, no Alto Umuarama, em Uberlândia, oferecendo serviços completos com amor, segurança e profissionais apaixonados por animais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                to="/contato"
+              <a
+                href="https://wa.me/5534997622017"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-pink-100 transition-all transform hover:-translate-y-1 text-center"
               >
                 Agendar Banho
-              </Link>
+              </a>
               <Link
                 to="/servicos"
                 className="bg-third hover:bg-third/90 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-blue-50 transition-all transform hover:-translate-y-1 text-center"
