@@ -1,8 +1,30 @@
-
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const Testimonials: React.FC = () => {
+  const [loadScript, setLoadScript] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setLoadScript(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!loadScript) return;
+
     // Carrega o script do Elfsight dinamicamente
     const id = "ElfsightPlatformScript";
     if (!document.getElementById(id)) {
@@ -12,10 +34,10 @@ const Testimonials: React.FC = () => {
       js.async = true;
       document.getElementsByTagName("head")[0].appendChild(js);
     }
-  }, []);
+  }, [loadScript]);
 
   return (
-    <section id="testimonials" className="py-24 bg-accent/30">
+    <section id="testimonials" className="py-24 bg-accent/30" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Estilo para remover o título redundante do widget Elfsight */}
         <style dangerouslySetInnerHTML={{

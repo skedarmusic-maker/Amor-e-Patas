@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-20">
             <Link to="/" className="flex items-center gap-2 cursor-pointer">
               <img
-                src="/images/LOGO-Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_Counter_7.png"
+                src="/images/Logo-Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_.webp"
                 alt="Amor & Patas - Pet Shop e Banho e Tosa em Uberlândia - Alto Umuarama"
                 className="h-16 w-auto object-contain"
               />
