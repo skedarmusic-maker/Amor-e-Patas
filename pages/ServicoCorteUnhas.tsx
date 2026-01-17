@@ -3,10 +3,10 @@ import { Ruler, MessageCircle, CheckCircle2, Star, ShieldCheck, Heart, Scissors 
 
 const ServicoCorteUnhas: React.FC = () => {
   const photos = [
-    "https://images.unsplash.com/photo-1591768793355-74d7af236c1f?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1520315342629-6ea920342047?auto=format&fit=crop&q=80&w=600"
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop-perto-de-mim-banho-e-tosa-Uberlandia_Counter_8.webp",
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_13.webp",
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_Counter.webp",
+    "/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_7.webp"
   ];
 
   return (
@@ -33,8 +33,8 @@ const ServicoCorteUnhas: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="relative">
-              <img src="/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_11.webp" alt="Corte de unhas pet shop" className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-auto" />
+            <div className="relative flex justify-center">
+              <img src="/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_11.webp" alt="Corte de unhas pet shop" className="rounded-[3rem] shadow-2xl border-8 border-white w-[85%] h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ const ServicoCorteUnhas: React.FC = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {photos.map((url, i) => (
-                  <img key={i} src={url} className="rounded-2xl h-48 w-full object-cover shadow-lg hover:scale-105 transition-transform" alt="Corte de unha pet" />
+                  <img key={i} src={url} className="rounded-2xl h-64 w-full object-cover object-top shadow-lg hover:scale-105 transition-transform" alt="Corte de unha pet" />
                 ))}
               </div>
             </div>

@@ -3,10 +3,10 @@ import { Sparkles, MessageCircle, CheckCircle2, Star, Clock, ShieldCheck, Heart 
 
 const CronogramaPelagemTosa: React.FC = () => {
   const photos = [
-    "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1597333583630-40c821127a68?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1535268647677-5aa938150412?auto=format&fit=crop&q=80&w=600"
+    "/images/2/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_19.webp",
+    "/images/2/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_20.webp",
+    "/images/2/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_22.webp",
+    "/images/2/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_23.webp"
   ];
 
   return (
@@ -33,8 +33,8 @@ const CronogramaPelagemTosa: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="relative">
-              <img src="/images/Amor-e- Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_12.webp" alt="Serviço de escovação para cães" className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-auto" />
+            <div className="relative flex justify-center">
+              <img src="/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_12.webp" alt="Serviço de escovação para cães" className="rounded-[3rem] shadow-2xl border-8 border-white w-[90%] h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ const CronogramaPelagemTosa: React.FC = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {photos.map((url, i) => (
-                  <img key={i} src={url} className="rounded-2xl h-48 w-full object-cover shadow-lg hover:scale-105 transition-transform" alt="Escovação pet" />
+                  <img key={i} src={url} className="rounded-2xl h-64 w-full object-cover object-top shadow-lg hover:scale-105 transition-transform" alt="Escovação pet" />
                 ))}
               </div>
             </div>
