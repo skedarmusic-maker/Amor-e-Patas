@@ -96,6 +96,37 @@ const ServicoLimpezaOrelhas: React.FC = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Dúvidas Frequentes</h2>
+            <p className="text-gray-600">Perguntas comuns sobre higienização de orelhas em pets</p>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "Com que frequência devo limpar a orelha do meu cachorro?",
+                a: "A frequência ideal varia conforme a raça e a produção de cerúmen. Geralmente, uma vez por semana ou quinzenalmente é o recomendado. Cães com orelhas caídas (como Cocker e Golden) precisam de atenção redobrada."
+              },
+              {
+                q: "A limpeza de ouvido dói?",
+                a: "Não! Se o ouvido estiver saudável, a limpeza é indolor e pode até ser relaxante. Caso o pet sinta dor, é um sinal de alerta para possíveis inflamações, e nosso especialista irá avisá-lo imediatamente."
+              },
+              {
+                q: "Vocês usam pinça para tirar pelos de dentro do ouvido?",
+                a: "A remoção de pelos excessivos do canal auditivo (depilação) é feita apenas quando necessário e com extremo cuidado, pois em alguns casos pode causar irritação. Avaliamos cada animal individualmente."
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">{item.q}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-900 text-center text-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-8">Saúde começa pela higiene!</h2>

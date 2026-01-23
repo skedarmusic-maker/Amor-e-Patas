@@ -96,17 +96,52 @@ const CronogramaPelagemTosa: React.FC = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Dúvidas sobre o Cronograma</h2>
+            <p className="text-gray-600">Perguntas frequentes sobre o tratamento de pelagem</p>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "O que é Cardagem (Remoção de Subpelo)?",
+                a: "É uma técnica que utiliza escovas especiais para remover os pelos mortos que já se soltaram da pele, mas continuam presos na pelagem. Isso reduz drasticamente a queda de pelos em casa e deixa o animal mais fresco no calor."
+              },
+              {
+                q: "O cronograma elimina 100% da queda de pelos?",
+                a: "Não é possível eliminar 100% pois a troca de pelos é um processo natural e saudável. Porém, o cronograma remove até 90% dos pelos mortos no banho, evitando que eles caiam no seu sofá ou roupas durante a semana."
+              },
+              {
+                q: "Cães de pelo curto (Pug, Bulldog) também precisam?",
+                a: "Sim! Muitas vezes são os que mais soltam pelo. O cronograma para pelo curto foca em hidratação profunda e remoção de pelos mortos, deixando a pelagem brilhante e macia."
+              },
+              {
+                q: "Com que frequência devo fazer?",
+                a: "Depende da raça e da época do ano (troca de pelagem). Geralmente recomendamos sessões quinzenais para manutenção ou pacotes mensais para tratamento intensivo."
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 px-8">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">{item.q}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 text-center text-white">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-8">Mantenha seu pet impecável!</h2>
           <p className="text-gray-400 text-lg mb-10">Agende agora o <strong>cronograma de pelagem e tosa</strong> e veja a diferença na saúde do seu melhor amigo.</p>
-          <a href="https://wa.me/5534997622017" target="_blank" className="bg-primary text-white px-12 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:bg-primary/90 transition-all flex inline-flex items-center gap-3">
+          <a href="https://wa.me/5534997622017" target="_blank" className="bg-primary text-white px-12 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:bg-primary/90 transition-all inline-flex items-center gap-3">
             <MessageCircle size={28} />
             Solicitar Orçamento
           </a>
         </div>
       </section>
-    </div>
+    </div >
   );
 };
 

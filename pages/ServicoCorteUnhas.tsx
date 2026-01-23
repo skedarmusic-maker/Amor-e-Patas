@@ -96,6 +96,41 @@ const ServicoCorteUnhas: React.FC = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Perguntas Frequentes</h2>
+            <p className="text-gray-600">Tire suas dúvidas sobre o corte de unhas.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                q: "Cortar a unha do cachorro dói?",
+                a: "Não, é um procedimento indolor quando feito corretamente. Cortamos apenas a ponta 'morta' da unha, longe da inervação (o sabugo). Se o seu pet tem medo, temos paciência para acalmá-lo."
+              },
+              {
+                q: "E se a unha sangrar?",
+                a: "Acidentes são raríssimos conosco, mas podem acontecer se o pet se mexer bruscamente. Caso ocorra, temos pó hemostático profissional que estanca o sangue na hora e cauteriza o local sem dor."
+              },
+              {
+                q: "Vocês cortam unha de gato também?",
+                a: "Sim! Somos especialistas em felinos também. Sabemos que gatos precisam de uma contenção diferenciada e um ambiente mais calmo para não se estressarem."
+              },
+              {
+                q: "O corte de unha já está incluso no banho?",
+                a: "Sim! Todos os nossos pacotes de banho (avulso ou mensal) já incluem o corte de unhas e limpeza de ouvidos como cortesia."
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">{item.q}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-900 text-center text-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-8">Passos firmes e sem dor!</h2>

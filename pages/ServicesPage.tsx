@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Bath, Scissors, Dog, Sparkles, Calendar, ShieldAlert, CheckCircle2, MessageCircle, MapPin, Truck, Heart, Star } from 'lucide-react';
 
 
@@ -55,17 +56,24 @@ const ServicesPage: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Banho 🧼", desc: "Higienização completa com shampoos de pH neutro e condicionamento.", icon: <Bath className="text-primary" /> },
-              { title: "Corte de Unha 💅", desc: "Corte técnico para evitar dores articulares e desconforto.", icon: <CheckCircle2 className="text-third" /> },
-              { title: "Tosa Higiênica 🐾", desc: "Remoção de pelos em áreas críticas para saúde e limpeza.", icon: <Scissors className="text-primary" /> },
-              { title: "Limpeza de Ouvido 👂", desc: "Higienização auricular cuidadosa para prevenção de otites.", icon: <Sparkles className="text-third" /> }
+              { title: "Banho 🧼", desc: "Higienização completa com shampoos de pH neutro e condicionamento.", icon: <Bath className="text-primary" />, link: null },
+              { title: "Corte de Unha 💅", desc: "Corte técnico para evitar dores articulares e desconforto.", icon: <CheckCircle2 className="text-third" />, link: "/servico-corte-unhas" },
+              { title: "Tosa Higiênica 🐾", desc: "Remoção de pelos em áreas críticas para saúde e limpeza.", icon: <Scissors className="text-primary" />, link: "/servico-banho-tosa" },
+              { title: "Limpeza de Ouvido 👂", desc: "Higienização auricular cuidadosa para prevenção de otites.", icon: <Sparkles className="text-third" />, link: "/servico-limpeza-orelhas" }
             ].map((item, i) => (
-              <div key={i} className="p-8 rounded-[2.5rem] bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-2xl transition-all group">
-                <div className="mb-6 w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
-                  {item.icon}
+              <div key={i} className="relative group">
+                <div className="h-full p-8 rounded-[2.5rem] bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-2xl transition-all">
+                  <div className="mb-6 w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed mb-4">{item.desc}</p>
+                  {item.link && (
+                    <Link to={item.link} className="text-primary font-bold text-sm flex items-center gap-1 hover:underline">
+                      Saiba mais <span className="text-lg">→</span>
+                    </Link>
+                  )}
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h4>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -82,19 +90,22 @@ const ServicesPage: React.FC = () => {
               </h2>
               <div className="space-y-6">
                 {[
-                  { name: "Banho e Tosa (Máquina)", desc: "Ideal para manter o pet fresco e com fácil manutenção diária." },
-                  { name: "Banho e Tosa (Tesoura)", desc: "Acabamento premium e artesanal, ideal para manter o volume desejado." },
-                  { name: "Tosa Padrão da Raça", desc: "Respeitamos as características clássicas de cada linhagem (Poodle, Schnauzer, etc)." }
+                  { name: "Banho e Tosa (Máquina)", desc: "Ideal para manter o pet fresco e com fácil manutenção diária.", link: "/servico-banho-tosa" },
+                  { name: "Banho e Tosa (Tesoura)", desc: "Acabamento premium e artesanal, ideal para manter o volume desejado.", link: "/servico-banho-tosa" },
+                  { name: "Tosa Padrão da Raça", desc: "Respeitamos as características clássicas de cada linhagem (Poodle, Schnauzer, etc).", link: "/servico-banho-tosa" },
+                  { name: "Cronograma de Pelagem", desc: "Recuperação profunda da pelagem, devolvendo brilho e maciez (sem cortes).", link: "/cronograma-pelagem-tosa" }
                 ].map((tosa, i) => (
-                  <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex gap-6 items-start">
-                    <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center text-primary shrink-0">
-                      <Scissors size={24} />
+                  <Link key={i} to={tosa.link!} className="block">
+                    <div className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex gap-6 items-start hover:border-primary/30 hover:shadow-md transition-all">
+                      <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center text-primary shrink-0">
+                        <Scissors size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900 text-lg mb-1">{tosa.name}</h4>
+                        <p className="text-gray-500 text-sm leading-relaxed">{tosa.desc}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 text-lg mb-1">{tosa.name}</h4>
-                      <p className="text-gray-500 text-sm leading-relaxed">{tosa.desc}</p>
-                    </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

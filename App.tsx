@@ -16,9 +16,12 @@ import ServicoLimpezaOrelhas from './pages/ServicoLimpezaOrelhas';
 import ServicoCorteUnhas from './pages/ServicoCorteUnhas';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+import CanonicalUrl from './components/CanonicalUrl';
+
 const App: React.FC = () => {
   return (
     <Router>
+      <CanonicalUrl />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col overflow-x-hidden">
         <Navbar />
