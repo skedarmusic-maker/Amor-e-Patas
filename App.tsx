@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -21,33 +20,31 @@ import CanonicalUrl from './components/CanonicalUrl';
 
 const App: React.FC = () => {
   return (
-    <HelmetProvider>
-      <Router>
-        <CanonicalUrl />
-        <ScrollToTop />
-        <div className="min-h-screen flex flex-col overflow-x-hidden">
-          <Navbar />
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/sobre" element={<AboutPage />} />
-              <Route path="/servicos" element={<ServicesPage />} />
-              <Route path="/contato" element={<ContactPage />} />
-              <Route path="/servico-banho-tosa" element={<PaginaServicoBanhoetosa />} />
-              <Route path="/cronograma-pelagem-tosa" element={<CronogramaPelagemTosa />} />
-              <Route path="/servico-limpeza-orelhas" element={<ServicoLimpezaOrelhas />} />
-              <Route path="/servico-corte-unhas" element={<ServicoCorteUnhas />} />
-              <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
-              {/* Redirecionamentos de conveniência */}
-              <Route path="/home" element={<Navigate to="/" replace />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </main>
-          <Footer />
-          <WhatsAppButton />
-        </div>
-      </Router>
-    </HelmetProvider>
+    <Router>
+      <CanonicalUrl />
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col overflow-x-hidden">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sobre" element={<AboutPage />} />
+            <Route path="/servicos" element={<ServicesPage />} />
+            <Route path="/contato" element={<ContactPage />} />
+            <Route path="/servico-banho-tosa" element={<PaginaServicoBanhoetosa />} />
+            <Route path="/cronograma-pelagem-tosa" element={<CronogramaPelagemTosa />} />
+            <Route path="/servico-limpeza-orelhas" element={<ServicoLimpezaOrelhas />} />
+            <Route path="/servico-corte-unhas" element={<ServicoCorteUnhas />} />
+            <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
+            {/* Redirecionamentos de conveniência */}
+            <Route path="/home" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </Router>
   );
 };
 

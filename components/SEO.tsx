@@ -1,5 +1,4 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 
 interface SEOProps {
     title: string;
@@ -18,35 +17,56 @@ const SEO: React.FC<SEOProps> = ({
     ogType = 'website',
     keywords = 'pet shop, banho e tosa, uberlandia, spitz alemão, estética animal'
 }) => {
-    return (
-        <Helmet>
-            {/* Basic Meta Tags */}
-            <title>{title}</title>
-            <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
+    useEffect(() => {
+        // Update title
+        document.title = title;
 
-            {/* Canonical URL - CRUCIAL for fixing GSC error */}
-            <link rel="canonical" href={canonical} />
+        // Helper function to update or create meta tag
+        const updateMetaTag = (property: string, content: string, isProperty = false) => {
+            const attribute = isProperty ? 'property' : 'name';
+            let element = document.querySelector(`meta[${attribute}="${property}"]`);
 
-            {/* Open Graph / Facebook */}
-            <meta property="og:type" content={ogType} />
-            <meta property="og:url" content={canonical} />
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content={ogImage} />
-            <meta property="og:locale" content="pt_BR" />
+            if (!element) {
+                element = document.createElement('meta');
+                element.setAttribute(attribute, property);
+                document.head.appendChild(element);
+            }
 
-            {/* Twitter */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:url" content={canonical} />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={ogImage} />
+            element.setAttribute('content', content);
+        };
 
-            {/* Additional SEO */}
-            <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        </Helmet>
-    );
+        // Update basic meta tags
+        updateMetaTag('description', description);
+        updateMetaTag('keywords', keywords);
+        updateMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+
+        // Update canonical link
+        let canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (!canonicalLink) {
+            canonicalLink = document.createElement('link');
+            canonicalLink.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonicalLink);
+        }
+        canonicalLink.setAttribute('href', canonical);
+
+        // Update Open Graph tags
+        updateMetaTag('og:type', ogType, true);
+        updateMetaTag('og:url', canonical, true);
+        updateMetaTag('og:title', title, true);
+        updateMetaTag('og:description', description, true);
+        updateMetaTag('og:image', ogImage, true);
+        updateMetaTag('og:locale', 'pt_BR', true);
+
+        // Update Twitter Card tags
+        updateMetaTag('twitter:card', 'summary_large_image');
+        updateMetaTag('twitter:url', canonical);
+        updateMetaTag('twitter:title', title);
+        updateMetaTag('twitter:description', description);
+        updateMetaTag('twitter:image', ogImage);
+
+    }, [title, description, canonical, ogImage, ogType, keywords]);
+
+    return null;
 };
 
 export default SEO;
