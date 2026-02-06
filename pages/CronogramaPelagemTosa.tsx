@@ -1,5 +1,7 @@
 import React from 'react';
 import { Sparkles, MessageCircle, CheckCircle2, Star, Clock, ShieldCheck, Heart } from 'lucide-react';
+import SEO from '../components/SEO';
+import ServiceSchema from '../components/ServiceSchema';
 
 const CronogramaPelagemTosa: React.FC = () => {
   const photos = [
@@ -11,6 +13,31 @@ const CronogramaPelagemTosa: React.FC = () => {
 
   return (
     <div className="pt-24 bg-white min-h-screen">
+      <SEO
+        title="Cronograma de Pelagem e Tosa em Uberlândia | Amor & Patas Pet Shop"
+        description="Especialistas em cronograma de pelagem e tosa em Uberlândia. Técnicas de desembolo, remoção de subpelo e cardagem para a saúde da pele do seu pet. Agende no Alto Umuarama!"
+        canonical="https://amorepataspetshop.com.br/cronograma-pelagem-tosa"
+        keywords="cronograma pelagem, tosa pet, cardagem, desembolo, remoção subpelo, pet shop uberlandia, banho e tosa uberlandia, alto umuarama"
+        ogImage="https://amorepataspetshop.com.br/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_12.webp"
+      />
+      <ServiceSchema
+        serviceName="Cronograma de Pelagem e Tosa"
+        description="Serviço especializado em cronograma de pelagem e tosa com técnicas de desembolo, remoção de subpelo (cardagem) e hidratação profunda para manter a saúde da pele e beleza da pelagem do seu pet."
+        url="https://amorepataspetshop.com.br/cronograma-pelagem-tosa"
+        provider={{
+          name: "Amor & Patas Pet Shop e Estética Animal",
+          url: "https://amorepataspetshop.com.br",
+          telephone: "+5534997622017",
+          address: {
+            streetAddress: "Av. Floriano Peixoto, 5237 - Loja 14",
+            addressLocality: "Uberlândia",
+            addressRegion: "MG",
+            postalCode: "38405-373"
+          }
+        }}
+        areaServed="Uberlândia, MG"
+        serviceType="Pet Grooming - Cronograma de Pelagem"
+      />
       <section className="relative py-16 lg:py-24 bg-accent/50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
