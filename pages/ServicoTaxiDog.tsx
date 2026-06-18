@@ -5,9 +5,9 @@ import ServiceSchema from '../components/ServiceSchema';
 
 const ServicoTaxiDog: React.FC = () => {
   const photos = [
-    "/images/taxdog/Cão_grande_serviço_taxi_dog_202606181242.jpeg",
-    "/images/taxdog/Cão_grande_serviço_taxi_dog_202606181243.jpeg",
-    "/images/taxdog/Cão_grande_serviço_taxi_dog_202606181243 (1).jpeg",
+    "/images/taxdog/cao_grande_servico_taxi_dog_202606181242.jpeg",
+    "/images/taxdog/cao_grande_servico_taxi_dog_202606181243.jpeg",
+    "/images/taxdog/cao_grande_servico_taxi_dog_202606181243_1.jpeg",
     "/images/taxdog/com_base_no_modelo_do_202606181242.jpeg"
   ];
 
@@ -18,7 +18,7 @@ const ServicoTaxiDog: React.FC = () => {
         description="Precisa de transporte para cães grandes em Uberlândia? Nosso Táxi Dog possui veículo adaptado, climatizado e seguro para raças grandes no Alto Umuarama. Agende!"
         canonical="https://amorepataspetshop.com.br/servico-taxi-dog"
         keywords="táxi dog uberlândia, transporte de cão grande, transporte pet cão grande porte, táxi pet uberlândia, transporte de cachorro uberlândia, táxi dog alto umuarama, amor e patas táxi dog, pet shop uberlândia"
-        ogImage="https://amorepataspetshop.com.br/images/taxdog/Cão_grande_serviço_taxi_dog_202606181242.jpeg"
+        ogImage="https://amorepataspetshop.com.br/images/taxdog/cao_grande_servico_taxi_dog_202606181242.jpeg"
       />
       
       <ServiceSchema
@@ -70,7 +70,7 @@ const ServicoTaxiDog: React.FC = () => {
             </div>
             <div className="relative flex justify-center">
               <img 
-                src="/images/taxdog/Cão_grande_serviço_taxi_dog_202606181242.jpeg" 
+                src="/images/taxdog/cao_grande_servico_taxi_dog_202606181242.jpeg" 
                 alt="Táxi Dog para cães de grande porte em Uberlândia" 
                 className="rounded-[3rem] shadow-2xl border-8 border-white w-[90%] h-96 object-cover" 
               />
