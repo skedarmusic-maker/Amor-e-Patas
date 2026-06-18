@@ -37,6 +37,7 @@ const App: React.FC = () => {
             <Route path="/servico-limpeza-orelhas" element={<ServicoLimpezaOrelhas />} />
             <Route path="/servico-corte-unhas" element={<ServicoCorteUnhas />} />
             <Route path="/servico-taxi-dog" element={<ServicoTaxiDog />} />
+            <Route path="/servico-taxdog" element={<Navigate to="/servico-taxi-dog" replace />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             {/* Redirecionamentos de conveniência */}
             <Route path="/home" element={<Navigate to="/" replace />} />
