@@ -14,6 +14,7 @@ import PaginaServicoBanhoetosa from './pages/PaginaServicoBanhoetosa';
 import CronogramaPelagemTosa from './pages/CronogramaPelagemTosa';
 import ServicoLimpezaOrelhas from './pages/ServicoLimpezaOrelhas';
 import ServicoCorteUnhas from './pages/ServicoCorteUnhas';
+import ServicoTaxiDog from './pages/ServicoTaxiDog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import CanonicalUrl from './components/CanonicalUrl';
@@ -35,6 +36,7 @@ const App: React.FC = () => {
             <Route path="/cronograma-pelagem-tosa" element={<CronogramaPelagemTosa />} />
             <Route path="/servico-limpeza-orelhas" element={<ServicoLimpezaOrelhas />} />
             <Route path="/servico-corte-unhas" element={<ServicoCorteUnhas />} />
+            <Route path="/servico-taxi-dog" element={<ServicoTaxiDog />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             {/* Redirecionamentos de conveniência */}
             <Route path="/home" element={<Navigate to="/" replace />} />

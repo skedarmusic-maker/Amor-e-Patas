@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Scissors, Sparkles, Droplets, Ruler } from 'lucide-react';
+import { Scissors, Sparkles, Droplets, Ruler, Truck } from 'lucide-react';
 
 const services = [
   {
@@ -30,6 +30,13 @@ const services = [
     icon: <Ruler className="w-8 h-8" />,
     color: 'bg-third/10 text-third',
     path: '/servico-corte-unhas'
+  },
+  {
+    title: 'TÁXI DOG G. PORTE',
+    description: 'Transporte seguro, confortável e climatizado com veículo adaptado para cães de grande porte.',
+    icon: <Truck className="w-8 h-8" />,
+    color: 'bg-primary/10 text-primary',
+    path: '/servico-taxi-dog'
   }
 ];
 
@@ -42,7 +49,7 @@ const Services: React.FC = () => {
           <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900">Serviços de Banho e Tosa e Estética Animal em Uberlândia</h3>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {services.map((service, idx) => (
             <div
               key={idx}

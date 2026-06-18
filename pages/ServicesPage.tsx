@@ -168,10 +168,13 @@ const ServicesPage: React.FC = () => {
                   <Truck size={36} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold mb-4">Táxi Dog Uberlândia</h4>
-                  <p className="text-gray-400 leading-relaxed">
-                    Não tem tempo de trazer seu pet? Nosso <strong>Táxi Dog no Alto Umuarama</strong> busca seu melhor amigo com segurança e conforto no veículo adaptado.
+                  <h4 className="text-2xl font-bold mb-4">Táxi Dog Uberlândia (Grande Porte)</h4>
+                  <p className="text-gray-400 leading-relaxed mb-4">
+                    Não tem tempo de trazer seu pet? Nosso <strong>Táxi Dog no Alto Umuarama</strong> busca seu melhor amigo com segurança e conforto no veículo adaptado, inclusive cães de grande porte.
                   </p>
+                  <Link to="/servico-taxi-dog" className="text-third font-bold text-sm flex items-center gap-1 hover:underline">
+                    Saiba mais sobre o transporte de cães grandes <span className="text-lg">→</span>
+                  </Link>
                 </div>
               </div>
               <div className="flex gap-8 items-start">
