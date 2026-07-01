@@ -189,7 +189,7 @@ const PetShopUberlandia: React.FC = () => {
               <img 
                 src="/images/pagina-pet-uberlandia/fachada_pet_shop_uberlandia.jpeg" 
                 alt="Fachada do pet shop Amor & Patas no Mall Alto Umuarama em Uberlândia" 
-                className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-80 object-cover" 
+                className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-80 object-cover object-top" 
               />
             </div>
           </div>
