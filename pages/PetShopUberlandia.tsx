@@ -61,13 +61,13 @@ const PetShopUberlandia: React.FC = () => {
                 </a>
               </div>
             </div>
-            {/* Foto Hero - Placeholder */}
+            {/* Foto Hero */}
             <div className="relative flex justify-center w-full">
-              <div className="w-[90%] h-96 bg-gray-50 border-2 border-dashed border-gray-200 rounded-[3rem] flex flex-col items-center justify-center text-gray-400 gap-3 shadow-md">
-                <ImageIcon size={48} className="text-gray-300" />
-                <span className="text-sm font-medium">Espaço Reservado para Foto do Pet Shop</span>
-                <span className="text-xs text-gray-400">Recomendado: 800x600px</span>
-              </div>
+              <img 
+                src="/images/pagina-pet-uberlandia/pet_shop_banho_tosa_1.webp" 
+                alt="Serviço de banho e tosa profissional no pet shop Amor & Patas" 
+                className="rounded-[3rem] shadow-2xl border-8 border-white w-[90%] h-96 object-cover" 
+              />
             </div>
           </div>
         </div>
@@ -143,13 +143,20 @@ const PetShopUberlandia: React.FC = () => {
                 </div>
               </div>
               
-              {/* Espaço para Galeria de Fotos em Branco */}
+              {/* Galeria de Fotos */}
               <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="rounded-2xl h-40 bg-white border border-dashed border-gray-200 flex flex-col items-center justify-center text-gray-400 p-2 text-center">
-                    <ImageIcon size={24} className="text-gray-300 mb-1" />
-                    <span className="text-[10px] font-medium leading-tight">Foto Galeria {i}</span>
-                  </div>
+                {[
+                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_1.webp", alt: "Estética animal Amor & Patas em Uberlândia" },
+                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_2.webp", alt: "Manejo humanizado no banho e tosa" },
+                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_3.webp", alt: "Cosmética pet de alto padrão" },
+                  { url: "/images/pagina-pet-uberlandia/fachada_pet_shop_uberlandia.jpeg", alt: "Fachada da loja no Mall Alto Umuarama" }
+                ].map((img, i) => (
+                  <img 
+                    key={i} 
+                    src={img.url} 
+                    alt={img.alt} 
+                    className="rounded-2xl h-40 w-full object-cover shadow-lg hover:scale-105 transition-transform" 
+                  />
                 ))}
               </div>
             </div>
@@ -177,11 +184,13 @@ const PetShopUberlandia: React.FC = () => {
                 </div>
               </div>
             </div>
-            {/* Espaço para Foto do Local / Fachada */}
-            <div className="w-full h-80 bg-white border-2 border-dashed border-gray-200 rounded-[3rem] flex flex-col items-center justify-center text-gray-400 gap-3 shadow-sm">
-              <ImageIcon size={36} className="text-gray-300" />
-              <span className="text-sm font-medium">Foto da Fachada / Localização</span>
-              <span className="text-xs text-gray-400">Recomendado: 600x400px</span>
+            {/* Fachada do Local */}
+            <div className="relative flex justify-center">
+              <img 
+                src="/images/pagina-pet-uberlandia/fachada_pet_shop_uberlandia.jpeg" 
+                alt="Fachada do pet shop Amor & Patas no Mall Alto Umuarama em Uberlândia" 
+                className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-80 object-cover" 
+              />
             </div>
           </div>
         </div>
