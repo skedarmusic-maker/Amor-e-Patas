@@ -253,3 +253,5 @@ const PetShopUberlandia: React.FC = () => {
 };
 
 export default PetShopUberlandia;
+// Forçando novo deploy após erro de rede FTP da Hostinger
+
