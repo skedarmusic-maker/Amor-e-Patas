@@ -56,6 +56,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li><Link to="/sobre" className="text-gray-400 hover:text-white transition-colors">Sobre Nós</Link></li>
               <li><Link to="/servicos" className="text-gray-400 hover:text-white transition-colors">Nossos Serviços</Link></li>
+              <li><Link to="/pet-shop-uberlandia" className="text-gray-400 hover:text-white transition-colors">Pet Shop Uberlândia</Link></li>
               <li><Link to="/contato" className="text-gray-400 hover:text-white transition-colors">Contato</Link></li>
               <li><Link to="/politica-privacidade" className="text-gray-400 hover:text-white transition-colors">Política de Privacidade</Link></li>
             </ul>

@@ -218,9 +218,12 @@ const ServicesPage: React.FC = () => {
       {/* 8. Rodapé SEO Local */}
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-gray-500 text-sm leading-relaxed">
+          <p className="text-gray-500 text-sm leading-relaxed mb-4">
             Se você mora no bairro <strong>Alto Umuarama</strong>, Residencial Grand Ville ou próximo à Av. Floriano Peixoto em <strong>Uberlândia</strong>, a Amor & Patas é sua melhor escolha. Somos especialistas em <strong>banho e tosa pet em Uberlândia</strong>, oferecendo serviços de tosa na tesoura, tosa na máquina, hidratação de pelagem e muito mais. Nossa missão é ser o <strong>pet shop de confiança</strong> para sua família, cuidando de cada cão como se fosse nosso.
           </p>
+          <Link to="/pet-shop-uberlandia" className="text-primary font-bold text-sm hover:underline">
+            Conheça nossa página dedicada de Pet Shop em Uberlândia →
+          </Link>
         </div>
       </section>
     </div>

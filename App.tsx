@@ -15,6 +15,7 @@ import CronogramaPelagemTosa from './pages/CronogramaPelagemTosa';
 import ServicoLimpezaOrelhas from './pages/ServicoLimpezaOrelhas';
 import ServicoCorteUnhas from './pages/ServicoCorteUnhas';
 import ServicoTaxiDog from './pages/ServicoTaxiDog';
+import PetShopUberlandia from './pages/PetShopUberlandia';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import CanonicalUrl from './components/CanonicalUrl';
@@ -38,6 +39,8 @@ const App: React.FC = () => {
             <Route path="/servico-corte-unhas" element={<ServicoCorteUnhas />} />
             <Route path="/servico-taxi-dog" element={<ServicoTaxiDog />} />
             <Route path="/servico-taxdog" element={<Navigate to="/servico-taxi-dog" replace />} />
+            <Route path="/pet-shop-uberlandia" element={<PetShopUberlandia />} />
+            <Route path="/pet-shop-em-uberlandia" element={<Navigate to="/pet-shop-uberlandia" replace />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             {/* Redirecionamentos de conveniência */}
             <Route path="/home" element={<Navigate to="/" replace />} />
