@@ -146,16 +146,16 @@ const PetShopUberlandia: React.FC = () => {
               {/* Galeria de Fotos */}
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_1.webp", alt: "Estética animal Amor & Patas em Uberlândia" },
-                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_2.webp", alt: "Manejo humanizado no banho e tosa" },
-                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_3.webp", alt: "Cosmética pet de alto padrão" },
-                  { url: "/images/pagina-pet-uberlandia/fachada_pet_shop_uberlandia.jpeg", alt: "Fachada da loja no Mall Alto Umuarama" }
+                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_1.webp", alt: "Estética animal Amor & Patas em Uberlândia", pos: "object-cover" },
+                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_2.webp", alt: "Manejo humanizado no banho e tosa", pos: "object-cover object-[center_30%]" },
+                  { url: "/images/pagina-pet-uberlandia/pet_shop_banho_tosa_3.webp", alt: "Fachada do Pet Shop Amor & Patas", pos: "object-cover" },
+                  { url: "/images/pagina-pet-uberlandia/fachada_pet_shop_uberlandia.jpeg", alt: "Cãozinho shih tzu na Amor & Patas", pos: "object-cover object-[center_30%]" }
                 ].map((img, i) => (
                   <img 
                     key={i} 
                     src={img.url} 
                     alt={img.alt} 
-                    className="rounded-2xl h-40 w-full object-cover shadow-lg hover:scale-105 transition-transform" 
+                    className={`rounded-2xl h-40 w-full ${img.pos} shadow-lg hover:scale-105 transition-transform`} 
                   />
                 ))}
               </div>
@@ -187,9 +187,9 @@ const PetShopUberlandia: React.FC = () => {
             {/* Fachada do Local */}
             <div className="relative flex justify-center">
               <img 
-                src="/images/pagina-pet-uberlandia/fachada_pet_shop_uberlandia.jpeg" 
+                src="/images/pagina-pet-uberlandia/pet_shop_banho_tosa_3.webp" 
                 alt="Fachada do pet shop Amor & Patas no Mall Alto Umuarama em Uberlândia" 
-                className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-80 object-cover object-top" 
+                className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-80 object-cover" 
               />
             </div>
           </div>
