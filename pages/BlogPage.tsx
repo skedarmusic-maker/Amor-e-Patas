@@ -6,6 +6,16 @@ import SEO from '../components/SEO';
 const BlogPage: React.FC = () => {
   const posts = [
     {
+      id: 2,
+      title: "Tosa no Spitz Alemão: Por Que Usar Apenas Tesoura? Mitos, Subpelo e Cuidados em Uberlândia",
+      excerpt: "Descubra por que a tosa na máquina pode causar Alopecia Pós-Tosa no Spitz Alemão (Lulu da Pomerânia) e entenda os benefícios da tosa na tesoura padrão da raça em Uberlândia!",
+      image: "/images/blog/spitz_alemao_tosa_tesoura_1.jpeg",
+      category: "Estética & Raças",
+      date: "22 de Agosto de 2026",
+      readTime: "Leitura de 6 min",
+      slug: "/blog/tosa-spitz-alemao-tesoura-subpelo"
+    },
+    {
       id: 1,
       title: "Cães de Grande Porte: Cuidados Especiais com Banho, Tosa e Transporte em Uberlândia",
       excerpt: "Cuidar de um cão de grande porte exige planejamento, principalmente na hora do banho, tosa e transporte. Saiba como evitar dermatites e o estresse de locomoção em Uberlândia!",

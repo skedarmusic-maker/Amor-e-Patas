@@ -18,6 +18,7 @@ import ServicoTaxiDog from './pages/ServicoTaxiDog';
 import PetShopUberlandia from './pages/PetShopUberlandia';
 import BlogPage from './pages/BlogPage';
 import CaesGrandePorte from './pages/blog/CaesGrandePorte';
+import SpitzAlemaoTosa from './pages/blog/SpitzAlemaoTosa';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import CanonicalUrl from './components/CanonicalUrl';
@@ -45,6 +46,7 @@ const App: React.FC = () => {
             <Route path="/pet-shop-em-uberlandia" element={<Navigate to="/pet-shop-uberlandia" replace />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/caes-de-grande-porte" element={<CaesGrandePorte />} />
+            <Route path="/blog/tosa-spitz-alemao-tesoura-subpelo" element={<SpitzAlemaoTosa />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             {/* Redirecionamentos de conveniência */}
             <Route path="/home" element={<Navigate to="/" replace />} />
