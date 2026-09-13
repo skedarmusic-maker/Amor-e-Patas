@@ -232,7 +232,7 @@ const PetShopAclimacaoUberlandia: React.FC = () => {
               <img
                 src="/images/blog/spitz_alemao_tosa_tesoura_2.jpeg"
                 alt="Resultado de tosa na tesoura perto do bairro Aclimação"
-                className="rounded-3xl h-56 w-full object-cover shadow-lg"
+                className="rounded-3xl h-56 w-full object-cover object-[center_15%] shadow-lg"
               />
               <img
                 src="/images/pagina-pet-uberlandia/pet_shop_banho_tosa_2.webp"
