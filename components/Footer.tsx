@@ -59,6 +59,7 @@ const Footer: React.FC = () => {
               <li><Link to="/pet-shop-uberlandia" className="text-gray-400 hover:text-white transition-colors">Pet Shop Uberlândia</Link></li>
               <li><Link to="/pet-shop-bairro-aclimacao-uberlandia" className="text-gray-400 hover:text-white transition-colors">Bairro Aclimação</Link></li>
               <li><Link to="/pet-shop-bairro-marta-helena-uberlandia" className="text-gray-400 hover:text-white transition-colors">Bairro Marta Helena</Link></li>
+              <li><Link to="/pet-shop-bairro-nossa-senhora-das-gracas-uberlandia" className="text-gray-400 hover:text-white transition-colors">Bairro N. Sra. das Graças</Link></li>
               <li><Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Blog Amor & Patas</Link></li>
               <li><Link to="/contato" className="text-gray-400 hover:text-white transition-colors">Contato</Link></li>
               <li><Link to="/politica-privacidade" className="text-gray-400 hover:text-white transition-colors">Política de Privacidade</Link></li>
