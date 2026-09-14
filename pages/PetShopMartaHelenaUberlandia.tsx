@@ -1,10 +1,30 @@
 import React from 'react';
-import { ShieldCheck, Heart, MessageCircle, CheckCircle2, MapPin, Sparkles, Scissors, Truck, Clock, Award, Star, Droplets } from 'lucide-react';
+import { ShieldCheck, Heart, MessageCircle, CheckCircle2, MapPin, Sparkles, Scissors, Truck, Clock, Award, Star, Droplets, ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
 import ServiceSchema from '../components/ServiceSchema';
+import FAQSchema from '../components/FAQSchema';
 import { Link } from 'react-router-dom';
 
 const PetShopMartaHelenaUberlandia: React.FC = () => {
+  const faqList = [
+    {
+      question: "O Táxi Dog da Amor & Patas atende no Bairro Marta Helena?",
+      answer: "Sim! Atendemos toda a extensão do Bairro Marta Helena com nossa rota de Táxi Dog. Buscamos o animal no conforto da sua residência e o levamos de volta assim que o procedimento estiver concluído."
+    },
+    {
+      question: "Qual o diferencial do banho e tosa da Amor & Patas em relação a outros pet shops?",
+      answer: "Trabalhamos com o método de atendimento humanizado. Não utilizamos sedativos, os produtos são dermatologicamente testados para cães e gatos, e os animais são tratados com reforço positivo, minimizando qualquer ansiedade."
+    },
+    {
+      question: "Vocês realizam tosa na tesoura específica de raça no Marta Helena?",
+      answer: "Sim, somos especialistas em tosa na tesoura padrão para Spitz Alemão (Lulu da Pomerânia), Shih Tzu, Poodle, Maltês, Bichon Frisé e outras raças que necessitam de acabamento manual sem uso de máquina no subpelo."
+    },
+    {
+      question: "Como faço para agendar um horário para o Bairro Marta Helena?",
+      answer: "O agendamento é simples e rápido diretamente pelo nosso WhatsApp (34) 99762-2017. Basta nos informar a raça do seu pet, o serviço desejado e se precisará do serviço de busca Táxi Dog."
+    }
+  ];
+
   return (
     <div className="pt-24 bg-white min-h-screen">
       <SEO
@@ -33,6 +53,8 @@ const PetShopMartaHelenaUberlandia: React.FC = () => {
         areaServed="Bairro Marta Helena, Uberlândia - MG"
         serviceType="Pet Shop e Estética Animal"
       />
+
+      <FAQSchema items={faqList} id="faq-schema-marta-helena" />
 
       {/* Hero Section */}
       <section className="relative py-16 lg:py-24 bg-accent/50 overflow-hidden">
@@ -286,6 +308,57 @@ const PetShopMartaHelenaUberlandia: React.FC = () => {
                 <p className="text-gray-600 leading-relaxed text-sm">{item.a}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cross-linking Bairros Vizinhos e Uberlândia */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-primary font-bold text-xs uppercase tracking-wider bg-primary/10 px-3.5 py-1.5 rounded-full">
+              Cobertura Regional
+            </span>
+            <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mt-3">
+              Também Atendemos Outros Bairros em Uberlândia
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link
+              to="/pet-shop-bairro-aclimacao-uberlandia"
+              className="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group"
+            >
+              <h4 className="font-bold text-gray-900 group-hover:text-primary transition-colors flex items-center justify-between mb-2">
+                Bairro Aclimação <ArrowRight size={16} className="text-primary" />
+              </h4>
+              <p className="text-gray-500 text-xs leading-relaxed">
+                Banho e tosa humanizado e Táxi Dog rápido para tutores e pets residentes no Bairro Aclimação.
+              </p>
+            </Link>
+
+            <Link
+              to="/pet-shop-bairro-nossa-senhora-das-gracas-uberlandia"
+              className="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group"
+            >
+              <h4 className="font-bold text-gray-900 group-hover:text-primary transition-colors flex items-center justify-between mb-2">
+                Bairro N. Sra. das Graças <ArrowRight size={16} className="text-primary" />
+              </h4>
+              <p className="text-gray-500 text-xs leading-relaxed">
+                Estética animal humanizada e busca e entrega no Bairro Nossa Senhora das Graças.
+              </p>
+            </Link>
+
+            <Link
+              to="/pet-shop-uberlandia"
+              className="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group"
+            >
+              <h4 className="font-bold text-gray-900 group-hover:text-primary transition-colors flex items-center justify-between mb-2">
+                Pet Shop Uberlândia (Geral) <ArrowRight size={16} className="text-primary" />
+              </h4>
+              <p className="text-gray-500 text-xs leading-relaxed">
+                Conheça nossa estrutura completa no Mall Alto Umuarama na Av. Floriano Peixoto.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

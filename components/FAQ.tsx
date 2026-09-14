@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, MessageCircleQuestion } from 'lucide-react';
+import FAQSchema from './FAQSchema';
 
 const FAQ: React.FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -45,6 +46,7 @@ const FAQ: React.FC = () => {
 
     return (
         <section className="py-20 bg-gray-50">
+            <FAQSchema items={faqData} id="faq-schema-home" />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4">

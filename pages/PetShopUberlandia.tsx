@@ -1,16 +1,37 @@
 import React from 'react';
-import { ShieldCheck, Heart, MessageCircle, CheckCircle2, Star, MapPin, Sparkles, Image as ImageIcon, Scissors, Truck } from 'lucide-react';
+import { ShieldCheck, Heart, MessageCircle, CheckCircle2, Star, MapPin, Sparkles, Image as ImageIcon, Scissors, Truck, ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
 import ServiceSchema from '../components/ServiceSchema';
+import FAQSchema from '../components/FAQSchema';
+import { Link } from 'react-router-dom';
 
 const PetShopUberlandia: React.FC = () => {
+  const faqList = [
+    {
+      question: "Qual o horário de funcionamento do pet shop?",
+      answer: "Funcionamos de segunda a sexta, das 07:30 às 18:20, e aos sábados das 07:30 às 12:30. Trabalhamos exclusivamente sob agendamento para evitar aglomerações e garantir a melhor experiência para os animais."
+    },
+    {
+      question: "Vocês atendem todas as raças de cães em Uberlândia?",
+      answer: "Sim! Somos capacitados para atender cães de todos os portes e temperamentos — desde raças toy como Spitz Alemão, Shih-Tzu e Yorkshire, até cães de grande porte como Golden Retriever, Labrador e Bernese Mountain Dog."
+    },
+    {
+      question: "Qual o valor do banho e tosa na Amor & Patas?",
+      answer: "Os valores variam conforme o porte do animal, o tipo de pelagem (curta, longa, dupla) e o estado geral dos pelos (presença de nós). Entre em contato via WhatsApp para podermos fornecer um orçamento preciso e agendar o horário do seu melhor amigo."
+    },
+    {
+      question: "Como funciona o serviço de Táxi Dog em Uberlândia?",
+      answer: "Buscamos o seu pet na sua residência e o levamos de volta em segurança após a finalização do serviço estético. Nosso carro possui climatização permanente e caixas de transporte seguras e higienizadas após cada viagem. Atendemos os bairros Aclimação, Marta Helena, Nossa Senhora das Graças, Alto Umuarama, Grand Ville e redondezas."
+    }
+  ];
+
   return (
     <div className="pt-24 bg-white min-h-screen">
       <SEO
         title="Pet Shop em Uberlândia – Banho e Tosa Premium | Amor & Patas"
         description="Buscando o melhor pet shop em Uberlândia? A Amor & Patas no Alto Umuarama oferece banho e tosa humanizado, estética animal premium e táxi dog. Agende seu pet!"
         canonical="https://amorepataspetshop.com.br/pet-shop-uberlandia"
-        keywords="pet shop uberlandia, pet shop em uberlândia, banho e tosa uberlandia, pet shop perto de mim, pet shop alto umuarama, estetica animal uberlandia, amor e patas uberlandia"
+        keywords="pet shop uberlandia, pet shop em uberlândia, banho e tosa uberlandia, pet shop perto de mim, pet shop alto umuarama, estetica animal uberlandia, amor e patas uberlandia, taxi dog uberlandia"
         ogImage="https://amorepataspetshop.com.br/images/Logo-Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet-shop-pet-shop-perto-de-mim-banho-e-tosa-Uberlandia_.webp"
       />
 
@@ -33,15 +54,17 @@ const PetShopUberlandia: React.FC = () => {
         serviceType="Pet Shop e Estética Animal"
       />
 
+      <FAQSchema items={faqList} id="faq-schema-pet-shop-uberlandia" />
+
       {/* Hero Section */}
       <section className="relative py-16 lg:py-24 bg-accent/50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <nav className="flex mb-6 text-sm font-medium text-gray-500">
-                <span className="hover:text-primary cursor-pointer">Início</span>
+                <Link to="/" className="hover:text-primary transition-colors">Início</Link>
                 <span className="mx-2">/</span>
-                <span className="text-primary">Pet Shop Uberlândia</span>
+                <span className="text-primary font-bold">Pet Shop Uberlândia</span>
               </nav>
               <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
                 Sua Referência em <span className="text-primary">Pet Shop em Uberlândia</span>
@@ -192,6 +215,85 @@ const PetShopUberlandia: React.FC = () => {
                 className="rounded-[3rem] shadow-2xl border-8 border-white w-full h-80 object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Atendimento por Bairros em Uberlândia - Link Juice & Silo SEO */}
+      <section className="py-20 bg-accent/30 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-primary font-bold text-sm tracking-wider uppercase bg-primary/10 px-4 py-1.5 rounded-full">
+              Atendimento Regional
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-4 mb-4">
+              Atendimento em Bairros de Uberlândia com Táxi Dog
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Oferecemos serviço exclusivo de busca e entrega com veículo próprio e climatizado nos principais bairros da cidade:
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link
+              to="/pet-shop-bairro-aclimacao-uberlandia"
+              className="group bg-white p-8 rounded-3xl shadow-sm border border-pink-50 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-12 h-12 bg-pink-100 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <MapPin size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                  Bairro Aclimação
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                  Banho e tosa humanizado e Táxi Dog rápido para tutores e pets residentes no Bairro Aclimação.
+                </p>
+              </div>
+              <span className="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Ver atendimento no Aclimação <ArrowRight size={16} />
+              </span>
+            </Link>
+
+            <Link
+              to="/pet-shop-bairro-marta-helena-uberlandia"
+              className="group bg-white p-8 rounded-3xl shadow-sm border border-pink-50 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-12 h-12 bg-pink-100 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <MapPin size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                  Bairro Marta Helena
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                  Estética animal premium, pet spa e busca e entrega domiciliar de cães e gatos no Bairro Marta Helena.
+                </p>
+              </div>
+              <span className="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Ver atendimento no Marta Helena <ArrowRight size={16} />
+              </span>
+            </Link>
+
+            <Link
+              to="/pet-shop-bairro-nossa-senhora-das-gracas-uberlandia"
+              className="group bg-white p-8 rounded-3xl shadow-sm border border-pink-50 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-12 h-12 bg-pink-100 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <MapPin size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                  Bairro N. Sra. das Graças
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                  Cuidados com manejo humanizado, tosa na tesoura e Táxi Dog dedicado para o Bairro Nossa Senhora das Graças.
+                </p>
+              </div>
+              <span className="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Ver atendimento no N. Sra. das Graças <ArrowRight size={16} />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

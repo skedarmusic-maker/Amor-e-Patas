@@ -211,10 +211,10 @@ const CaesGrandePorte: React.FC = () => {
               Conclusão: Facilite a Rotina do Seu Amigo na Amor & Patas
             </h2>
             <p>
-              Cuidar do seu parceiro gigante não precisa ser sinônimo de cansaço ou estresse. Ao delegar o transporte e a estética para profissionais capacitados que entendem de manejo humanizado, você garante a saúde dele e ganha mais tempo livre para curtir os melhores momentos juntos.
+              Cuidar do seu parceiro gigante não precisa ser sinônimo de cansaço ou estresse. Ao delegar o transporte e a estética para profissionais capacitados que entendem de manejo humanizado, você garante a saúde dele e ganha mais tempo livre para curtir os melhores momentos juntos. Conheça nossa estrutura completa de <Link to="/servico-banho-tosa" className="text-primary font-bold hover:underline">banho e tosa</Link> e os cuidados de nosso <Link to="/pet-shop-uberlandia" className="text-primary font-bold hover:underline">pet shop em Uberlândia</Link>.
             </p>
             <p>
-              Que tal agendar o próximo banho do seu peludo com o nosso serviço de transporte integrado?
+              Que tal agendar o próximo banho do seu peludo com o nosso serviço integrado de <Link to="/servico-taxi-dog" className="text-primary font-bold hover:underline">Táxi Dog em Uberlândia</Link>? Buscamos nos principais bairros como Aclimação, Marta Helena, Nossa Senhora das Graças e Alto Umuarama.
             </p>
 
             {/* CTA do Artigo */}
