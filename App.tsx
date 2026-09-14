@@ -17,6 +17,7 @@ import ServicoCorteUnhas from './pages/ServicoCorteUnhas';
 import ServicoTaxiDog from './pages/ServicoTaxiDog';
 import PetShopUberlandia from './pages/PetShopUberlandia';
 import PetShopAclimacaoUberlandia from './pages/PetShopAclimacaoUberlandia';
+import PetShopMartaHelenaUberlandia from './pages/PetShopMartaHelenaUberlandia';
 import BlogPage from './pages/BlogPage';
 import CaesGrandePorte from './pages/blog/CaesGrandePorte';
 import SpitzAlemaoTosa from './pages/blog/SpitzAlemaoTosa';
@@ -47,6 +48,8 @@ const App: React.FC = () => {
             <Route path="/pet-shop-em-uberlandia" element={<Navigate to="/pet-shop-uberlandia" replace />} />
             <Route path="/pet-shop-bairro-aclimacao-uberlandia" element={<PetShopAclimacaoUberlandia />} />
             <Route path="/pet-shop-aclimacao-uberlandia" element={<Navigate to="/pet-shop-bairro-aclimacao-uberlandia" replace />} />
+            <Route path="/pet-shop-bairro-marta-helena-uberlandia" element={<PetShopMartaHelenaUberlandia />} />
+            <Route path="/pet-shop-marta-helena-uberlandia" element={<Navigate to="/pet-shop-bairro-marta-helena-uberlandia" replace />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/caes-de-grande-porte" element={<CaesGrandePorte />} />
             <Route path="/blog/tosa-spitz-alemao-tesoura-subpelo" element={<SpitzAlemaoTosa />} />
