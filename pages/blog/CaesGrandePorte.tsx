@@ -65,8 +65,8 @@ const CaesGrandePorte: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Botão Voltar */}
-        <Link 
-          to="/blog" 
+        <Link
+          to="/blog"
           className="inline-flex items-center gap-2 text-primary font-bold hover:underline mb-8 transition-all"
         >
           <ArrowLeft size={20} />
@@ -76,9 +76,9 @@ const CaesGrandePorte: React.FC = () => {
         {/* Cabeçalho do Artigo */}
         <article className="bg-white rounded-[3rem] shadow-xl overflow-hidden border border-gray-100">
           <div className="h-96 w-full relative">
-            <img 
-              src="/images/taxdog/cao_grande_servico_taxi_dog_202606181243.jpeg" 
-              alt="Cão de grande porte sendo transportado com segurança no Táxi Dog da Amor & Patas" 
+            <img
+              src="/images/taxdog/cao_grande_servico_taxi_dog_202606181243.jpeg"
+              alt="Cão de grande porte sendo transportado com segurança no Táxi Dog da Amor & Patas"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -223,9 +223,9 @@ const CaesGrandePorte: React.FC = () => {
               <p className="text-gray-400 mb-8 max-w-xl mx-auto text-sm">
                 Buscamos seu cão de grande porte na sua porta com o Táxi Dog climatizado e entregamos banhado e cheiroso sem nenhum estresse.
               </p>
-              <a 
-                href="https://wa.me/5534997622017" 
-                target="_blank" 
+              <a
+                href="https://wa.me/5534997622017"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-primary/90 transition-all inline-flex items-center gap-2"
               >

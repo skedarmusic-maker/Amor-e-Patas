@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, BookOpen, Clock } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -26,6 +26,44 @@ const BlogPage: React.FC = () => {
       slug: "/blog/caes-de-grande-porte"
     }
   ];
+
+  useEffect(() => {
+    const schemaId = 'blog-index-schema';
+    let script = document.getElementById(schemaId) as HTMLScriptElement;
+
+    if (!script) {
+      script = document.createElement('script');
+      script.id = schemaId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Amor & Patas - Dicas e Cuidados com Pets em Uberlândia",
+      "description": "Dicas de banho e tosa, estética animal, tosa na tesoura e transporte Táxi Dog em Uberlândia.",
+      "url": "https://amorepataspetshop.com.br/blog",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Amor & Patas Pet Shop e Estética Animal",
+        "url": "https://amorepataspetshop.com.br"
+      },
+      "blogPost": posts.map(p => ({
+        "@type": "BlogPosting",
+        "headline": p.title,
+        "description": p.excerpt,
+        "url": `https://amorepataspetshop.com.br${p.slug}`
+      }))
+    };
+
+    script.textContent = JSON.stringify(schemaData);
+
+    return () => {
+      const existing = document.getElementById(schemaId);
+      if (existing) existing.remove();
+    };
+  }, []);
 
   return (
     <div className="pt-24 bg-white min-h-screen">

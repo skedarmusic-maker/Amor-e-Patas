@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sparkles, MessageCircle, CheckCircle2, Star, Clock, ShieldCheck, Heart } from 'lucide-react';
+import { Sparkles, MessageCircle, CheckCircle2, Star, Clock, ShieldCheck, Heart, ArrowRight, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import ServiceSchema from '../components/ServiceSchema';
 
@@ -118,6 +119,28 @@ const CronogramaPelagemTosa: React.FC = () => {
                   <img key={i} src={url} className="rounded-2xl h-64 w-full object-cover object-top shadow-lg hover:scale-105 transition-transform" alt="Escovação pet" />
                 ))}
               </div>
+            </div>
+
+            {/* Destaque do Blog: Cuidados com Spitz Alemão e Subpelo */}
+            <div className="mt-12 bg-white p-8 rounded-[2.5rem] border border-pink-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="space-y-2">
+                <span className="inline-flex items-center gap-1.5 text-primary font-bold text-xs uppercase tracking-wider bg-pink-50 px-3.5 py-1 rounded-full border border-pink-200">
+                  <BookOpen size={14} /> Artigo Recomendado no Blog
+                </span>
+                <h4 className="text-xl font-bold text-gray-900">
+                  Subpelo e Tosa no Spitz Alemão: Por Que Usar Apenas Tesoura?
+                </h4>
+                <p className="text-gray-600 text-sm max-w-2xl leading-relaxed">
+                  Entenda como funciona a troca de pelos em raças de pelagem dupla e por que a tosa na máquina pode comprometer o crescimento e a saúde da pele do seu cãozinho.
+                </p>
+              </div>
+              <Link
+                to="/blog/tosa-spitz-alemao-tesoura-subpelo"
+                className="bg-primary text-white font-bold text-sm px-7 py-3.5 rounded-2xl hover:bg-primary/90 transition-all shadow-md shadow-pink-100 inline-flex items-center gap-2 shrink-0 group"
+              >
+                Ler Artigo no Blog
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
         </div>

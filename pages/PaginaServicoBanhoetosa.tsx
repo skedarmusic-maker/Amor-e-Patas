@@ -1,5 +1,8 @@
 import React from 'react';
-import { Bath, Scissors, Sparkles, MessageCircle, CheckCircle2, Star, Clock, ShieldCheck, Droplets, Heart } from 'lucide-react';
+import { Bath, Scissors, Sparkles, MessageCircle, CheckCircle2, Star, Clock, ShieldCheck, Droplets, Heart, ArrowRight, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import ServiceSchema from '../components/ServiceSchema';
 
 const PaginaServicoBanhoetosa: React.FC = () => {
   const photos = [
@@ -11,6 +14,33 @@ const PaginaServicoBanhoetosa: React.FC = () => {
 
   return (
     <div className="pt-24 bg-white min-h-screen">
+      <SEO
+        title="Banho e Tosa em Uberlândia | Amor & Patas Alto Umuarama"
+        description="Especialistas em banho e tosa humanizado em Uberlândia no Alto Umuarama. Produtos premium, tosa na tesoura, corte de unhas e táxi dog. Agende seu horário!"
+        canonical="https://amorepataspetshop.com.br/servico-banho-tosa"
+        keywords="banho e tosa uberlandia, tosa tesoura spitz, tosa bebe shih tzu, banho e tosa alto umuarama, estetica animal uberlandia"
+        ogImage="https://amorepataspetshop.com.br/images/Amor-e-Patas-Pet-Shop-e-Estetica-Animal-pet shop-pet shop perto de mim-banho-e-tosa-Uberlandia_Counter_6.webp"
+      />
+
+      <ServiceSchema
+        serviceName="Banho e Tosa Humanizado em Uberlândia"
+        description="Serviço de banho e tosa para cães e gatos com produtos hipoalergênicos, tosa na máquina e tesoura, corte de unhas e limpeza de orelhas inclusos."
+        url="https://amorepataspetshop.com.br/servico-banho-tosa"
+        provider={{
+          name: "Amor & Patas Pet Shop e Estética Animal",
+          url: "https://amorepataspetshop.com.br",
+          telephone: "+5534997622017",
+          address: {
+            streetAddress: "Av. Floriano Peixoto, 5237 - Loja 14",
+            addressLocality: "Uberlândia",
+            addressRegion: "MG",
+            postalCode: "38405-373"
+          }
+        }}
+        areaServed="Uberlândia, MG"
+        serviceType="Pet Grooming - Banho e Tosa"
+      />
+
       {/* Hero Section SEO Focused */}
       <section className="relative py-16 lg:py-24 bg-accent/50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -187,6 +217,28 @@ const PaginaServicoBanhoetosa: React.FC = () => {
                   A tosa ideal une estética e bem-estar. Para cães de pelo longo (como Shih-tzu e Yorkshire), a <strong>Tosa Bebê</strong> facilita a manutenção e deixa uma aparência jovial. Para raças de pelagem dupla (como Spitz), a <strong>Tosa Trimming</strong> na tesoura é fundamental para não prejudicar o crescimento do pelo.
                 </p>
               </div>
+            </div>
+
+            {/* Destaque do Blog: Tosa Spitz Alemão na Tesoura */}
+            <div className="mt-12 bg-gradient-to-r from-pink-50 via-accent/30 to-pink-50 p-8 rounded-[2.5rem] border border-pink-100 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="space-y-2">
+                <span className="inline-flex items-center gap-1.5 text-primary font-bold text-xs uppercase tracking-wider bg-white px-3.5 py-1 rounded-full border border-pink-200">
+                  <BookOpen size={14} /> Artigo Recomendado no Blog
+                </span>
+                <h4 className="text-xl font-bold text-gray-900">
+                  Tosa no Spitz Alemão: Por Que Usar Apenas Tesoura?
+                </h4>
+                <p className="text-gray-600 text-sm max-w-2xl leading-relaxed">
+                  Entenda os riscos da tosa na máquina para cães de pelagem dupla e descubra como a tosa na tesoura preserva a barreira térmica natural da raça contra a alopecia pós-tosa.
+                </p>
+              </div>
+              <Link
+                to="/blog/tosa-spitz-alemao-tesoura-subpelo"
+                className="bg-primary text-white font-bold text-sm px-7 py-3.5 rounded-2xl hover:bg-primary/90 transition-all shadow-md shadow-pink-100 inline-flex items-center gap-2 shrink-0 group"
+              >
+                Ler Guia Completo
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
         </div>

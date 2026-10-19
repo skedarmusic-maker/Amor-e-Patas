@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amorepataspetshop.com.br/sitemap.xml

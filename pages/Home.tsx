@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import HomeServicesDetailed from '../components/HomeServicesDetailed';
+import HomeBlogSection from '../components/HomeBlogSection';
 import ReferenceBanner from '../components/ReferenceBanner';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
@@ -20,6 +21,9 @@ const Home: React.FC = () => {
 
       {/* Seção de Serviços Existente (Cards com Link para Páginas Internas) */}
       <Services />
+
+      {/* Artigos em Destaque do Blog para Autoridade e Indexação SEO */}
+      <HomeBlogSection />
 
       <Testimonials />
       <FAQ />
