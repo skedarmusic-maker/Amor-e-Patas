@@ -1,7 +1,7 @@
 
 // Deployment trigger: 2026-01-16T18:39:00
 import React, { useState, useEffect, useRef } from 'react';
-import { PawPrint, Star, Crown, ChevronLeft, ChevronRight, Instagram } from 'lucide-react';
+import { PawPrint, Star, Crown, ChevronLeft, ChevronRight, Instagram, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface Paw {
@@ -146,20 +146,35 @@ const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-third/20 rounded-full -z-10 opacity-70"></div>
 
             <img
-              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=800"
-              alt="Cachorro Feliz"
-              className="w-full h-auto object-cover rounded-3xl z-20 border-8 border-white shadow-2xl"
+              src="/images/hero-poodle-banho-e-tosa-uberlandia.webp"
+              alt="Cachorrinho Poodle em Banho e Tosa Especializado em Uberlândia - Amor & Patas"
+              className="w-full max-h-[500px] lg:max-h-[560px] object-cover rounded-3xl z-20 border-8 border-white shadow-2xl"
+              style={{ objectPosition: 'center 35%' }}
             />
 
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-4 animate-bounce duration-3000 border border-pink-50">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg shadow-pink-200">
-                <Crown size={24} fill="currentColor" />
+            <a
+              href="https://wa.me/5534997622017?text=Ol%C3%A1%20Amor%20%26%20Patas!%20Gostaria%20de%20agendar%20um%20banho%20e%20tosa%20para%20meu%20pet."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute -bottom-6 -left-4 sm:-left-6 bg-white p-3.5 sm:p-4 rounded-2xl shadow-2xl flex items-center gap-3 sm:gap-4 animate-bounce duration-3000 border border-green-100 group hover:scale-105 transition-transform cursor-pointer z-30"
+              aria-label="Falar no WhatsApp para agendar Banho e Tosa"
+            >
+              <div className="relative">
+                <span className="absolute -inset-1 rounded-full bg-green-500 opacity-40 animate-ping"></span>
+                <div className="relative w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-lg shadow-green-200 group-hover:scale-105 transition-transform">
+                  <MessageCircle size={26} strokeWidth={2.5} />
+                </div>
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-lg leading-tight">Banho & Tosa</p>
-                <p className="text-xs text-primary font-bold uppercase tracking-wide">Especializado</p>
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                  <p className="text-xs text-green-600 font-bold uppercase tracking-wide">WhatsApp Online</p>
+                </div>
+                <p className="font-extrabold text-gray-900 text-base sm:text-lg leading-tight group-hover:text-primary transition-colors">
+                  Agendar no WhatsApp
+                </p>
               </div>
-            </div>
+            </a>
 
             <div className="absolute top-0 -right-1 bg-white p-3 px-5 rounded-full shadow-2xl hidden md:flex items-center gap-3 border border-pink-100 whitespace-nowrap">
               <span className="text-gray-600 font-bold text-lg">4,9</span>
